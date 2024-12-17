@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .cont{
+            height: 620px;
+            width: 440px;
+            background-color: #fff;
+            margin-left: 400px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 8px;
+
+            
+        }
+        h2{
+            
+            margin-left: 100px;
+            padding-top: 10px;
+            
+        }
+        p{
+            margin-left: 160px;
+            margin-top: -15px;
+        }
+        .fname{
+            margin: 10px;
+            margin-left: 16px;
+            height: 27px;
+            width: 190px;
+        }
+        .sname{
+            width: 190px;
+            height: 27px;
+        }
+        .db{
+            font-weight:lighter;
+            font-size: small;
+            margin-top: 4px;
+            margin-left: 17px;
+        }
+        #day{
+            height: 32px;
+            width: 125px;
+            margin: 5px;
+            margin-left: 15px;
+
+        }
+        #date{
+            height: 32px;
+            width: 125px;
+            margin: 5px;
+        }
+        #year{
+            height: 32px;
+            width: 125px;
+            margin: 5px;
+        }
+        .gender{
+            margin-left: 16px;
+            margin-top: 2px;
+            font-size: small;
+            font-weight: lighter;
+        }
+        .rad1{
+            border: 1px solid black;
+            width: 125px;
+            height: 32px;
+            text-align: center;
+            margin-left: 16px;
+            margin-top: 1px;
+        }
+        .rad2{
+            border: 1px solid black;
+            width: 125px;
+            height: 32px;
+            text-align: center;
+            margin-top: -50px;
+            margin-left: 153px;
+
+        }
+        .rad3{
+            border: 1px solid black;
+            width: 125px;
+            height: 32px;
+            text-align: center;
+            margin-left: 295px;
+            margin-top: -50px;
+        }
+        .ema{
+            width: 400px;
+            height: 34px;
+            border-radius: 5px;
+            border:solid 1px black;
+            margin-left: 15px;
+            margin-top: -5px;
+        }
+        .pass{
+            width: 400px;
+            height: 34px;
+            border-radius: 5px;
+            border:solid 1px black;
+            margin-left: 15px;
+            margin-top: 6px;
+            
+        }
+        .par1{
+            flex-wrap: wrap;
+            display: flex;
+            font-size: x-small;
+            padding-top: 5px;
+            padding-bottom: 15px;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .par2{
+            flex-wrap: wrap;
+            font-size: x-small;
+            margin-left: 20px;
+            
+        }
+        .su{
+            width: 150px;
+            height: 25px;
+            background-color:green;
+            border: 1px solid white;
+            border-radius: 3px;
+            margin-left: 145px;
+            margin-top: 15px;
+            color: white;
+            font-weight: 500;
+           
+
+        }
+        .aa{
+            font-size: small;
+            margin-left: 150px;
+            padding-top: 20px;
+        }
+        @media (max-width:600px) {
+            body{
+                background-color:whitesmoke;
+                
+            }
+            .cont{
+                background-color: red;
+                margin:0 ;
+                padding: 0;
+            }
+
+            
+        }
+        .fname{
+            width: 90%;
+            
+        }
+        .sname{
+            width: 90%;
+            margin-left: 15px;
+        }
+        .fname:hover{
+            box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border: 1px solid red;
+            border-radius: 5px;
+            height: 31px;
+            transition: 0.5s ease,tramsform 0.3s ease;
+            
+        }
+        .sname:hover{
+            box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border: 1px solid red;
+            border-radius: 5px;
+            height: 31px;
+            transition: 0.5s ease,tramsform 0.3s ease;
+            caret-color: transparent;
+        }
+        .sname:hover::placeholder{
+            color: white;
+        }
+        .fname:hover::placeholder{
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="cont">
+    <div class="content">
+        <h2>Create a new account</h2>
+        <p>It's quick and easy</p>
+        <hr>
+        <form action="">
+            <table>
+                <tr>
+
+            
+        <input type="text" class="fname" placeholder="First name" required><input type="text" class="sname" placeholder="Surname" required>
+        <p class="db">Date of birth ?</p>
+        <select name="day" id="day">
+            <option value="1">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+            <option value="">8</option>
+            <option value="">9</option>
+            <option value="">10</option>
+            <option value="">11</option>
+            <option value="">12</option>
+            <option value="">13</option>
+            <option value="">14</option>
+            <option value="">15</option>
+            <option value="">16</option>
+            <option value="">17</option>
+            <option value="">18</option>
+            <option value="">19</option>
+            <option value="">20</option>
+            <option value="">21</option>
+            <option value="">22</option>
+            <option value="">23</option>
+            <option value="">24</option>
+            <option value="">25</option>
+            <option value="">26</option>
+            <option value="">27</option>
+            <option value="">28</option>
+            <option value="">29</option>
+            <option value="">30</option>
+            <option value="">31</option>
+        </select>
+        <select name="" id="date">
+            <option value="">January</option>
+            <option value="">February</option>
+            <option value="">March</option>
+            <option value="">April</option>
+            <option value="">May</option>
+            <option value="">June</option>
+            <option value="">July</option>
+            <option value="">August</option>
+            <option value="">September</option>
+            <option value="">October</option>
+            <option value="">November</option>
+            <option value="">December</option>
+        </select>
+        <select name="" id="year">
+            <option value="">2010</option>
+            <option value="">2011</option>
+            <option value="">2012</option>
+            <option value="">2013</option>
+            <option value="">2014</option>
+            <option value="">2015</option>
+            <option value="">2016</option>
+            <option value="">2017</option>
+            <option value="">2018</option>
+            <option value="">2019</option>
+            <option value="">2020</option>
+            <option value="">2021</option>
+            <option value="">2022</option>
+            <option value="">2023</option>
+            <option value="">2024</option>
+        </select>
+        <p class="gender">Gender</p>
+        <p class="rad1">Female <input type="radio" name="one"></p>
+        <p class="rad2">Male <input type="radio" name="one"></p>
+        <p class="rad3">Custom <input type="radio" name="one" ></p>
+        <input type="text" class="ema"placeholder="Mobile number or email address">
+        <input type="text" class="pass" placeholder="New password">
+        <p class="par1">People who use our services may have updated your contact information to facbook <span>Learn More</span></p>
+        <p class="par2">By clicking sigh Up. you agree to our <span>Terms, Privacy Policy</span> and <span>Cookies policy</span> you may receive
+        SMS notifications from us and can opt out at any time.</p>
+        <button type="submit" class="su">Sign Up</button><br>
+        <a href="" class="aa">Already have an account?</a>
+
+    </tr>
+    </table>
+    </form>
+        
+    </div>
+
+    </div>
+</body>
+</html>
